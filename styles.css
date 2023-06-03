@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Introduction */
+
+nav {
+  background: transparent;
+}
+
+nav a {
+  font-size: 25px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  font: 40px;
+}
+
+.img1 {
+  height: 250px;
+  width: 250px;
+  float: right;
+  border-radius: 100%;
+}
+
+.intro {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.first-page {
+  background-image: linear-gradient(to right top, #78c8e1 0%, #103c79 100%);
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.info {
+  display: inline-block;
+  margin: 5%;
+}
+
+.my-projects {
+  padding-top: 5%;
+}
+
+.card-img-top {
+  max-height: 500px;
+}
+
+.bottom-container {
+  /* background-color: #66bfbf; */
+  background: transparent;
+  text-align: center;
+  padding-bottom: 70px;
+  padding-top: 40px;
+  background-image: linear-gradient(to right bottom, #78c8e1 0%, #103c79 100%);
+}
+.footer-link {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 400;
+}
+a:hover {
+  color: #66bfbf;
+  text-decoration: none;
+}
+
+.contact-me {
+  text-align: center;
+  margin-top: 10%;
+  padding: 5%;
+  background-image: linear-gradient(to right top, #78c8e1 0%, #103c79 100%);
+}
+
+.contact-element {
+  margin: 5%;
+}
+
+.card-deck {
+  padding: 5%;
+}
+@media only screen and (max-width: 700px) {
+  .contact-element {
+    font-size: 25px;
+  }
+  .e1 {
+    font-size: 35px;
+  }
+  .contact-element:last-child {
+    font-size: 15px;
+  }
+  .footer-link {
+    font-size: 25px;
+  }
+}
