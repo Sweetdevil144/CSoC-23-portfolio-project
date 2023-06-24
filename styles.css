@@ -6,7 +6,7 @@ body {
 /* Dark Mode */
 
 .dark-mode {
-  background-image: linear-gradient(to right top, #FFECEC 0%, #e5bee0 100%);
+  background-image: linear-gradient(to right top, #f0d9ea 0%, #ea81dc 100%);
   color: black;
 }
 
