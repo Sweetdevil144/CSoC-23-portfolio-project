@@ -10,7 +10,7 @@ $(".mode-switch").on("click", function () {
     $("body").css('background-color','#343434')
     $(".link-1").html('<i class="fa-brands fa-linkedin-in fa-bounce" style="color: #ffffff;"></i>')
     $(".link-2").html('<i class="fa-brands fa-twitter fa-shake" style="color: #ffffff;"></i>')
-    $(".link-3").html('<i class="fa-brands fa-github fa-spi " style="color: #ffffff;"></i>')
+    $(".link-3").html('<i class="fa-brands fa-github fa-flip " style="color: #ffffff;"></i>')
   } else {
     darkmode=false
     $(".first-page").removeClass('dark-mode')
