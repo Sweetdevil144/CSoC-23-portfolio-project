@@ -35,7 +35,7 @@
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider round mode-switch"></span>
-              </label>
+            </label>
         </nav>
         <section class="intro" id="about-me">
             <div class="info">
@@ -72,19 +72,46 @@
             <h2 class="contact-element">I am currently available for freelance work opportunity.</h2>
         </div>
         <div class="bottom-container">
-            <a class="footer-link link-1" href="https://www.linkedin.com/in/abhinav-pandey-441504252/" target="_blank"><i
-                    class="fa-brands fa-linkedin fa-bounce""></i></a>
-            <a class="footer-link link-2" href="https://twitter.com/Abhinav_6996" target="_blank"><i
-                    class="fa-brands fa-twitter fa-shake"></i></a>
+            <a class="footer-link link-1" href="https://www.linkedin.com/in/abhinav-pandey-441504252/"
+                target="_blank"><i class="fa-brands fa-linkedin fa-bounce""></i></a>
+            <a class=" footer-link link-2" href="https://twitter.com/Abhinav_6996" target="_blank"><i
+                        class="fa-brands fa-twitter fa-shake"></i></a>
             <a class="footer-link link-3" href="https://github.com/Sweetdevil144" target="_blank"><i
                     class="fa-brands fa-github fa-flip"></i></a>
         </div>
     </section>
-    <!-- <div class="embed-responsive embed-responsive-4by3">
-        <iframe class="embed-responsive-item" src="images/https://dictionary-app.sweetdevil144.repl.co"></iframe>
-      </div> -->
+    <section id="music">
+        <h3 class="light-mode text-center p-3 music">
+            We've got some music for you.
+        </h3>
+    </section>
+    <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/users/1539950/favorites&amp;show_user=false&sharing=false&auto_play=false&buying=false&start_track=1"
+        width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+    <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function () {
+            var widgetIframe = document.getElementById('sc-widget'),
+                widget = SC.Widget(widgetIframe);
 
-    <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+            widget.bind(SC.Widget.Events.READY, function () {
+                widget.bind(SC.Widget.Events.PLAY, function () {
+                    // get information about currently playing sound
+                    widget.getCurrentSound(function (currentSound) {
+                        console.log('sound ' + currentSound.get('') + 'began to play');
+                    });
+                });
+                // get current level of volume
+                widget.getVolume(function (volume) {
+                    console.log('current volume value is ' + volume);
+                });
+                // set new volume level
+                widget.setVolume(80);
+                // get the value of the current position
+            });
+
+        }());
+    </script>
+    <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

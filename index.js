@@ -2,10 +2,12 @@ let darkmode = false;
 $(".mode-switch").on("click", function () {
   if(!darkmode) {
     darkmode=true
-    $(".first-page").addClass('dark-mode')
-    $(".contact-me").addClass('dark-mode')
     $(".first-page").removeClass('light-mode')
     $(".contact-me").removeClass('light-mode')
+    $('.music').removeClass('light-mode')
+    $('music').addClass('dark-mode')
+    $(".first-page").addClass('dark-mode')
+    $(".contact-me").addClass('dark-mode')
     $("body").css('color','white')
     $("body").css('background-color','#343434')
     $(".link-1").html('<i class="fa-brands fa-linkedin-in fa-bounce" style="color: #ffffff;"></i>')
@@ -15,6 +17,8 @@ $(".mode-switch").on("click", function () {
     darkmode=false
     $(".first-page").removeClass('dark-mode')
     $(".contact-me").removeClass('dark-mode')
+    $(".music").removeClass('dark-mode')
+    $('.music').addClass('light-mode')
     $(".first-page").addClass('light-mode')
     $(".contact-me").addClass('light-mode')
     $("body").css('color','black')
